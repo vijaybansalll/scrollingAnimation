@@ -17,7 +17,7 @@ export default function HouseWalkthrough() {
   // Helper to format frame path
   const getFramePath = useCallback((frameIndex: number) => {
     const padded = String(frameIndex).padStart(2, "0");
-    return `/houseWalkthrough/frames/${padded}.webp`;
+    return `/houseWalkthrough/${padded}.webp`;
   }, []);
 
   // Canvas drawing function
